@@ -21,41 +21,46 @@ public static void main (String [] args) {
 
 Scanner in = new Scanner(System.in);
 
+float gravityVenus =0.78f ;
+float gravityMars = 0.39f;
+float gravityJupiter = 2.65f;
+float gravitySaturn = 1.17f;
+float gravityUranus = 1.05f;
+float gravityNeptune = 1.23f;
+
 System.out.println("Enter your weight in kilos : ");
 float kg = in.nextFloat();
+
 
 System.out.println("Enter the planet you want to convert your weight to : ");
 String planet = in.next();
 
+
+
 switch (planet) {
 case "Venus" : case "VENUS" : case "venus" :
-float gravityVenus =0.78f ;
-System.out.println(" Your weight on " + planet + " is: " + (kg* gravityVenus) + " kg.");
+System.out.println("Your weight on " + planet + " is: " + (kg* gravityVenus) + " kg.");
 break;
 case "Mars" : case "MARS" : case "mars" :
-float gravityMars = 0.39f;
-System.out.println(" Your weight on " + planet + " is: " + (kg* gravityMars) + " kg.");
+System.out.println("Your weight on " + planet + " is: " + (kg* gravityMars) + " kg.");
 break;
 case "Jupiter" : case "JUPITER" : case "jupiter" :
-float gravityJupiter = 2.65f;
-System.out.println(" Your weight on " + planet + " is: " + (kg* gravityJupiter)+ " kg." );
+System.out.println("Your weight on " + planet + " is: " + (kg* gravityJupiter)+ " kg." );
 break;
 case "Saturn" : case "SATURN" : case "saturn" :
-float gravitySaturn = 1.17f;
-System.out.println(" Your weight on " + planet + " is: " + (kg* gravitySaturn) + " kg.");
+System.out.println("Your weight on " + planet + " is: " + (kg* gravitySaturn) + " kg.");
 break;
 case "Uranus" : case "URANUS" : case "uranus" :
-float gravityUranus = 1.05f;
-System.out.println(" Your weight on " + planet + " is: " + (kg* gravityUranus)+ " kg." );
+System.out.println("Your weight on " + planet + " is: " + (kg* gravityUranus)+ " kg." );
 break;
 case "Neptune" : case "NEPTUNE" : case "neptune" :
-float gravityNeptune = 1.23f;
-System.out.println(" Your weight on " + planet + " is: " + (kg* gravityNeptune) + " kg.");
+System.out.println("Your weight on " + planet + " is: " + (kg* gravityNeptune) + " kg.");
 break;
 default:
 System.out.println("Wrong input.");
 
 }
+
 
 
 }
