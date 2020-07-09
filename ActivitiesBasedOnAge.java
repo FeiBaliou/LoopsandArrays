@@ -15,11 +15,11 @@ Scanner in = new Scanner(System.in);
 
 System.out.println("Enter your age: " );
 byte age = in.nextByte();
-returnActivities (in,age);
+returnActivities (age);
 
 }
 
-public static void returnActivities(Scanner in, Byte age){
+public static void returnActivities(Byte age){
 
 if (age<16) {
 System.out.println("You cannot drive.");
